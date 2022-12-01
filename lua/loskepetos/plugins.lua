@@ -28,6 +28,7 @@ require('packer').startup({
     use { "akinsho/toggleterm.nvim" } -- Multiple Terminal
     use { "windwp/nvim-autopairs" } -- Autopairs
     use { "windwp/nvim-ts-autotag" } -- Autotags
+    use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 
     -- Colorscheme
     use { "folke/tokyonight.nvim" }
@@ -60,8 +61,8 @@ require('packer').startup({
     -- Lspconfig with ui
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
     use { "jose-elias-alvarez/null-ls.nvim" }
-    use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12" } -- simple to use language server installer
-    use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
+    use { "williamboman/mason.nvim" } -- simple to use language server installer
+    use { "williamboman/mason-lspconfig.nvim" }
     use { "glepnir/lspsaga.nvim", branch = "main" }
 
   end,
