@@ -69,19 +69,19 @@ protocol.CompletionItemKind = {
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+nvim_lsp.gopls.setup {
+  on_attach = on_attach,
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  cmd = { "gopls" },
+  capabilities = capabilities
+}
+
 nvim_lsp.phpactor.setup {
   on_attach = on_attach,
   filetypes = { "php" },
   cmd = { "phpactor", "language-server" },
   capabilities = capabilities
 }
-
--- nvim_lsp.intelephense.setup {
---   on_attach = on_attach,
---   filetypes = { "php" },
---   cmd = { "intelephense", "--stdio" },
---   capabilities = capabilities
--- }
 
 nvim_lsp.eslint.setup {
   on_attach = on_attach,
