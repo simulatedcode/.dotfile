@@ -22,6 +22,7 @@ require("packer").startup({
 		})
 		-- Options
 		use({ "nvim-lua/plenary.nvim" }) -- Plugins
+    use ({ "nvim-lua/popup.nvim" })
 		use({ "nvim-lualine/lualine.nvim" }) -- Lualine Statusline
 		use({ "lukas-reineke/indent-blankline.nvim" }) -- Indentline
 		use({ "numToStr/Comment.nvim" }) -- Comment
@@ -80,7 +81,8 @@ require("packer").startup({
 
 		-- PHPActor
 		use({ "phpactor/ncm2-phpactor" }) --php completions
-	end,
+	
+  end,
 
 	config = {
 		profile = { enable = true },
