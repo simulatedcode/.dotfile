@@ -17,11 +17,15 @@ glyphs.git = {
 }
 
 require("nvim-tree").setup({
+	update_focused_file = {
+		enable = true,
+		update_cwd = true,
+	},
 	diagnostics = { enable = true },
 	view = {
 		width = 32,
 		side = "left",
-		signcolumn = "no",
+		signcolumn = "yes",
 	},
 	git = {
 		enable = true,
@@ -30,7 +34,7 @@ require("nvim-tree").setup({
 	},
 	actions = {
 		open_file = {
-			quit_on_open = true,
+			quit_on_open = false,
 			window_picker = {
 				enable = false,
 			},

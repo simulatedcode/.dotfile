@@ -22,7 +22,7 @@ require("packer").startup({
 		})
 		-- Options
 		use({ "nvim-lua/plenary.nvim" }) -- Plugins
-    use ({ "nvim-lua/popup.nvim" })
+		use({ "nvim-lua/popup.nvim" })
 		use({ "nvim-lualine/lualine.nvim" }) -- Lualine Statusline
 		use({ "lukas-reineke/indent-blankline.nvim" }) -- Indentline
 		use({ "numToStr/Comment.nvim" }) -- Comment
@@ -33,10 +33,11 @@ require("packer").startup({
 		use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 		use({ "norcalli/nvim-colorizer.lua" })
 		use({ "mfussenegger/nvim-lint" })
+		use({ "tpope/vim-fugitive" })
 
 		-- Colorscheme
 		use({ "projekt0n/github-nvim-theme" })
-		--use { "folke/tokyonight.nvim" }
+		use({ "folke/tokyonight.nvim" })
 		--use { "lunarvim/darkplus.nvim" }
 
 		-- Treesitter
@@ -79,10 +80,13 @@ require("packer").startup({
 			end,
 		})
 
-		-- PHPActor
-		use({ "phpactor/ncm2-phpactor" }) --php completions
-	
-  end,
+		use({
+			"stevearc/aerial.nvim",
+			config = function()
+				require("aerial").setup()
+			end,
+		})
+	end,
 
 	config = {
 		profile = { enable = true },

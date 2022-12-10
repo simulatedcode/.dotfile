@@ -84,6 +84,12 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["aerial.nvim"] = {
+    config = { "\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vaerial\frequire\0" },
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/aerial.nvim",
+    url = "https://github.com/stevearc/aerial.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -174,11 +180,6 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["ncm2-phpactor"] = {
-    loaded = true,
-    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/ncm2-phpactor",
-    url = "https://github.com/phpactor/ncm2-phpactor"
-  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -264,6 +265,16 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/vim-illuminate",
@@ -272,6 +283,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: aerial.nvim
+time([[Config for aerial.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vaerial\frequire\0", "config", "aerial.nvim")
+time([[Config for aerial.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
