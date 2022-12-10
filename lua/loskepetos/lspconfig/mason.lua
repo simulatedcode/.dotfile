@@ -1,9 +1,9 @@
 local servers = {
   "sumneko_lua",
+  "eslint",
   "jsonls",
   "volar",
   "intelephense",
-  "phpactor",
   "tailwindcss",
   "tsserver",
 }
