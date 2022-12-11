@@ -34,6 +34,7 @@ vim.opt.wildignore:append({ "*/node_modules/*" })
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+vim.opt.termguicolors = true
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])

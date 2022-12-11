@@ -120,6 +120,11 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -155,6 +160,11 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/lsp-status.nvim",
     url = "https://github.com/nvim-lua/lsp-status.nvim"
   },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
+  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
@@ -174,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason-null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
+    url = "https://github.com/jayp0521/mason-null-ls.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
@@ -199,11 +214,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
-  },
-  ["nvim-lint"] = {
-    loaded = true,
-    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/nvim-lint",
-    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -270,10 +280,10 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["vim-fugitive"] = {
+  ["typescript.nvim"] = {
     loaded = true,
-    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/vim-fugitive",
-    url = "https://github.com/tpope/vim-fugitive"
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/typescript.nvim",
+    url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
   ["vim-illuminate"] = {
     loaded = true,
