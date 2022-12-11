@@ -4,9 +4,9 @@ if require("loskepetos.first_load")() then
   return
 end
 
-require("loskepetos.base")
+require("loskepetos.options")
 require("loskepetos.plugins")
-require("loskepetos.maps")
+require("loskepetos.keymaps")
 require("loskepetos.lspconfig")
 require("loskepetos.colorscheme")
 require("loskepetos.utilities")
