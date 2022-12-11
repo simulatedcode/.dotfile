@@ -42,6 +42,9 @@ local location = {
 }
 
 lualine.setup({
+  enabled = true,
+  winbar_width = '100%',
+  winbar_autoshow = true,
   options = {
     icons_enabled = true,
     theme = "auto",
@@ -86,5 +89,4 @@ lualine.setup({
     lualine_z = {},
   },
   tabline = {},
-  --extensions = { fugitive },
 })

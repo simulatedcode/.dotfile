@@ -3,12 +3,7 @@ vim.cmd("autocmd!")
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
-
 vim.wo.number = true
-
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -48,5 +43,4 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
-
 vim.opt.clipboard:append({ "unnamedplus" })

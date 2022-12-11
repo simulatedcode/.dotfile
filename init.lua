@@ -5,6 +5,7 @@ if require("loskepetos.first_load")() then
 end
 
 require("loskepetos.options")
+require("loskepetos.highlights")
 require("loskepetos.plugins")
 require("loskepetos.keymaps")
 require("loskepetos.lspconfig")
