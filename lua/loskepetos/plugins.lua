@@ -60,6 +60,8 @@ return packer.startup(function(use)
   use({ 'norcalli/nvim-colorizer.lua' })
   use({ "lewis6991/impatient.nvim" })
   use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
+  use({ 'goolord/alpha-nvim' })
+  use({ "ahmedkhalf/project.nvim" })
 
   use({ "projekt0n/github-nvim-theme" })
   use({ "folke/tokyonight.nvim" })

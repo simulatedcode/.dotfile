@@ -24,9 +24,6 @@ require("bufferline").setup({
         separator = true,
       },
     },
-    -- change background color of the tabpages
-    tabpages = true,
-    tabpages_bg = "#1e222a",
   }
 })
 

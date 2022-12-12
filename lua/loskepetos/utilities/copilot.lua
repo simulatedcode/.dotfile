@@ -8,6 +8,6 @@ vim.cmd([[highlight CopilotSuggestionSelectedSign guifg=#ae7c66 ctermfg=8]])
 vim.cmd([[highlight CopilotSuggestionSign guifg=#ae7c66 ctermfg=8]])
 
 --setup copilot
-vim.cmd([[autocmd FileType xml setlocal omnifunc=v:lua.copilot#Complete]])
-vim.cmd([[autocmd FileType xml setlocal completefunc=v:lua.copilot#Complete]])
-vim.cmd([[autocmd FileType xml setlocal completeopt=menuone,noselect]])
+-- vim.cmd([[autocmd FileType xml setlocal omnifunc=v:lua.copilot#Complete]])
+-- vim.cmd([[autocmd FileType xml setlocal completefunc=v:lua.copilot#Complete]])
+-- vim.cmd([[autocmd FileType xml setlocal completeopt=menuone,noselect]])

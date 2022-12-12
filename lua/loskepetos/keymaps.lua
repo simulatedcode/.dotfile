@@ -1,6 +1,10 @@
 local keymap = vim.keymap
+local opts = { noremap = true, silent = true }
 
 keymap.set('n', 'x', '"_x')
+
+-- Alpha
+keymap.set('n', '<F2>', ':Alpha<CR>', opts)
 
 -- Increment/decrement
 keymap.set('n', '+', '<C-a>')
@@ -34,3 +38,20 @@ keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
+
+-- Visual --
+-- Stay in indent mode
+keymap.set("v", "<", "<gv", opts)
+keymap.set("v", ">", ">gv", opts)
+
+-- Move text up and down
+keymap.set("v", "<S-j>", ":m .+1<CR>==", opts)
+keymap.set("v", "<S-k>", ":m .-2<CR>==", opts)
+keymap.set("v", "p", '"_dP', opts)
+
+-- Visual Block --
+-- Move text up and down
+keymap.set("x", "J", ":move '>+1<CR>gv-gv", opts)
+keymap.set("x", "K", ":move '<-2<CR>gv-gv", opts)
+keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
+keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
