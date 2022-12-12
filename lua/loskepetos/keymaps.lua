@@ -45,9 +45,9 @@ keymap.set("v", "<", "<gv", opts)
 keymap.set("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap.set("v", "<S-j>", ":m .+1<CR>==", opts)
-keymap.set("v", "<S-k>", ":m .-2<CR>==", opts)
+keymap.set("v", "<S-z", ":m .+0<CR>==", opts)
+keymap.set("v", "<S-x", ":m .-3<CR>==", opts)
 keymap.set("v", "p", '"_dP', opts)
 
-keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+keymap.set("x", "<S-z>", ":move '>+1<CR>gv-gv", opts)
+keymap.set("x", "<S-x>", ":move '<-2<CR>gv-gv", opts)

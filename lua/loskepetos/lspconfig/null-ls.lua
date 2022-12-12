@@ -1,7 +1,5 @@
 local status, null_ls = pcall(require, "null-ls")
-if not status then
-  return
-end
+if (not status) then return end
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
@@ -14,13 +12,18 @@ local lsp_formatting = function(bufnr)
   })
 end
 
-null_ls.setup({
+null_ls.setup {
   sources = {
-    null_ls.builtins.formatting.prettierd,
-    null_ls.builtins.diagnostics.eslint_d.with({
-      diagnostics_format = "[eslint] #{m}\n(#{c})",
+    null_ls.builtins.formatting.prettierd.with({
+      filetypes = { "javascript", "typescript", "typescriptreact", "javascriptreact", "json", "yaml", "markdown", "html",
+        "css", "scss", "less", "graphql", "vue", "svelte" },
+    }),
+    -- diagnostics eslint
+    null_ls.builtins.diagnostics.eslint.with({
+      filetypes = { "javascript", "typescript", "typescriptreact", "javascriptreact", "vue" },
     }),
     null_ls.builtins.diagnostics.fish,
+    null_ls.builtins.formatting.stylua
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
@@ -33,10 +36,14 @@ null_ls.setup({
         end,
       })
     end
+  end
+
+}
+
+vim.api.nvim_create_user_command(
+  'DisableLspFormatting',
+  function()
+    vim.api.nvim_clear_autocmds({ group = augroup, buffer = 0 })
   end,
-})
-
-vim.api.nvim_create_user_command("DisableLspFormatting", function()
-  vim.api.nvim_clear_autocmds({ group = augroup, buffer = 0 })
-end, { nargs = 0 })
-
+  { nargs = 0 }
+)
