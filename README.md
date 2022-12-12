@@ -1,7 +1,7 @@
 # my personal [.]dotfile
 
 this is the first time i have been try create workflow using nvim, for my personal Text/Editor.
-The ideas from [Lunarvim](https://github.com/LunarVim/Neovim-from-scratch ) inspiration from [craftzdog](https://github.com/craftzdog/dotfiles-public)
+The ideas from [Lunarvim](https://github.com/LunarVim/Neovim-from-scratch ) & [craftzdog](https://github.com/craftzdog/dotfiles-public)
 
 ## Configure.
 
