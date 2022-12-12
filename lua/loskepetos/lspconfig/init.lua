@@ -70,13 +70,6 @@ nvim_lsp.intelephense.setup({
   capabilities = capabilities,
 })
 
-nvim_lsp.phpactor.setup({
-  on_attach = on_attach,
-  filetypes = { "php" },
-  cmd = { "phpactor", "language-server" },
-  capabilities = capabilities,
-})
-
 nvim_lsp.eslint.setup({
   on_attach = on_attach,
   filetyes = {
@@ -161,14 +154,15 @@ for type, icon in pairs(signs) do
 end
 
 vim.diagnostic.config({
-  virtual_text = {
-    prefix = "●",
-  },
+  virtual_text = false,
   update_in_insert = true,
   float = {
     source = "always", -- Or "if_many"
   },
 })
+
+vim.cmd [[autocmd CursorHold lua vim.lsp.diagnostic.show_line_diagnostics()]]
+vim.cmd [[autocmd CursorHoldI silent! lua vim.lsp.buf.signature_help()]]
 
 require("loskepetos.lspconfig.mason")
 require("loskepetos.lspconfig.null-ls")

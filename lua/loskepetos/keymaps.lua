@@ -49,9 +49,5 @@ keymap.set("v", "<S-j>", ":m .+1<CR>==", opts)
 keymap.set("v", "<S-k>", ":m .-2<CR>==", opts)
 keymap.set("v", "p", '"_dP', opts)
 
--- Visual Block --
--- Move text up and down
-keymap.set("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap.set("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
