@@ -97,13 +97,14 @@ return packer.startup(function(use)
 		end,
 	})
 
-	-- Statusline
-	use({
-		"stevearc/aerial.nvim",
-		config = function()
-			require("aerial").setup()
-		end,
-	})
+	-- -- Statusline
+	-- use({
+	-- 	"stevearc/aerial.nvim",
+	-- 	config = function()
+	-- 		require("aerial").setup()
+	-- 	end,
+	-- })
+
 	-- Copilot
 	use({ "github/copilot.vim" })
 
