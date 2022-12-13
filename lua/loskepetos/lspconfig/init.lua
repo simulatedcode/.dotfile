@@ -63,6 +63,11 @@ protocol.CompletionItemKind = {
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+local lsp_flags = {
+  -- This is the default in Nvim 0.7+
+  debounce_text_changes = 150,
+}
+
 nvim_lsp.cssls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
@@ -73,15 +78,11 @@ nvim_lsp.html.setup({
   capabilities = capabilities,
 })
 
-nvim_lsp.tailwindcss.setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
-})
-
 nvim_lsp.intelephense.setup({
   on_attach = on_attach,
   filetypes = { "php" },
   cmd = { "intelephense", "--stdio" },
+  flags = lsp_flags,
   capabilities = capabilities,
 })
 
@@ -146,8 +147,8 @@ vim.diagnostic.config({
   },
 })
 
-vim.cmd [[autocmd CursorHold lua vim.lsp.diagnostic.show_line_diagnostics()]]
-vim.cmd [[autocmd CursorHoldI silent! lua vim.lsp.buf.signature_help()]]
+vim.cmd([[autocmd CursorHold lua vim.lsp.diagnostic.show_line_diagnostics()]])
+vim.cmd([[autocmd CursorHoldI silent! lua vim.lsp.buf.signature_help()]])
 
 require("loskepetos.lspconfig.mason")
 require("loskepetos.lspconfig.null-ls")

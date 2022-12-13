@@ -16,28 +16,28 @@ end
 
 null_ls.setup({
 	sources = {
-		null_ls.builtins.formatting.prettierd.with({
+		null_ls.builtins.formatting.prettier.with({
 			filetypes = {
 				"javascript",
 				"typescript",
 				"typescriptreact",
 				"javascriptreact",
+				"vue",
+				"css",
+				"scss",
 				"json",
 				"yaml",
 				"markdown",
 				"html",
-				"css",
-				"scss",
-				"less",
 				"graphql",
-				"vue",
-				"svelte",
+				"lua",
 			},
 		}),
 		-- diagnostics eslint
 		null_ls.builtins.diagnostics.eslint.with({
 			filetypes = { "javascript", "typescript", "typescriptreact", "javascriptreact", "vue" },
 		}),
+		-- diagnostics phpcs
 		null_ls.builtins.diagnostics.fish,
 		null_ls.builtins.formatting.stylua,
 	},

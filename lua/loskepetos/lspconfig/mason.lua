@@ -30,6 +30,8 @@ mason_lspconfig.setup({
 		"emmet_ls",
 		"volar",
 		"intelephense",
+		"phpactor",
+		"eslint",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
