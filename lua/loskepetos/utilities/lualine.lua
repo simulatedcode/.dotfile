@@ -17,12 +17,12 @@ local diagnostics = {
 	always_visible = true,
 }
 
-local mode = {
-	"mode",
-	fmt = function(str)
-		return "-- " .. str .. " --"
-	end,
-}
+-- local mode = {
+-- 	"mode",
+-- 	fmt = function(str)
+-- 		return "-- " .. str .. " --"
+-- 	end,
+-- }
 
 -- local filetype = {
 -- 	"filetype",
@@ -47,7 +47,7 @@ lualine.setup({
 	winbar_autoshow = true,
 	options = {
 		icons_enabled = true,
-		theme = "auto",
+		theme = "tokyonight",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline", "toggleterm" },
@@ -55,8 +55,8 @@ lualine.setup({
 	},
 	sections = {
 
-		lualine_a = { branch, diagnostics },
-		lualine_b = { mode },
+		lualine_a = { branch },
+		lualine_b = { diagnostics },
 		lualine_c = {
 			{
 				"diff",

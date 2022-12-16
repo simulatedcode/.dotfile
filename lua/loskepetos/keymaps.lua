@@ -16,8 +16,8 @@ keymap.set("n", "dw", 'vb"_d')
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
--- Save with root permission (not working for now)
---vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
+-- Save with text message
+keymap.set("n", ".s", ":w<cr>:echo 'Saved!'<cr>", opts)
 
 -- New tab
 keymap.set("n", "te", ":tabedit")
@@ -27,8 +27,14 @@ keymap.set("n", "ss", ":split<Return><C-w>w")
 keymap.set("n", "sv", ":vsplit<Return><C-w>w")
 
 -- Navigate buffers
-keymap.set("n", "<Tab>", ":bnext<CR>", opts)
-keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
+keymap.set("n", "<S-h>", ":bnext<CR>", opts)
+keymap.set("n", "<S-l>", ":bprevious<CR>", opts)
+
+-- clear search
+keymap.set("n", ".h", ":nohl<cr>", opts)
+
+-- Reload nvim
+keymap.set("n", "xr", ":source %<CR>:echo 'Reloaded!'<CR>", opts)
 
 -- Move window
 keymap.set("n", "<Space>", "<C-w>w")
@@ -36,6 +42,9 @@ keymap.set("", "sh", "<C-w>h")
 keymap.set("", "sk", "<C-w>k")
 keymap.set("", "sj", "<C-w>j")
 keymap.set("", "sl", "<C-w>l")
+
+-- close split window
+keymap.set("n", "xq", ":q<CR>", opts)
 
 -- Resize window
 keymap.set("n", "<C-w><left>", "<C-w><")
@@ -55,3 +64,7 @@ keymap.set("v", "p", '"_dP', opts)
 
 keymap.set("x", "<S-z>", ":move '>+1<CR>gv-gv", opts)
 keymap.set("x", "<S-x>", ":move '<-2<CR>gv-gv", opts)
+
+-- Glance
+keymap.set("n", "Gr", "<CMD>Glance references<CR>")
+keymap.set("n", "Gd", "<CMD>Glance type_definitions<CR>")

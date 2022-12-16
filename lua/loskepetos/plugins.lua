@@ -72,6 +72,7 @@ return packer.startup(function(use)
 	-- Telescope
 	use({ "nvim-telescope/telescope.nvim" })
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
+	use({ "nvim-telescope/telescope-dap.nvim" })
 
 	-- Cmp
 	use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
@@ -97,13 +98,17 @@ return packer.startup(function(use)
 		end,
 	})
 
-	-- -- Statusline
-	-- use({
-	-- 	"stevearc/aerial.nvim",
-	-- 	config = function()
-	-- 		require("aerial").setup()
-	-- 	end,
-	-- })
+	use({
+		"dnlhc/glance.nvim",
+		config = function()
+			require("glance").setup({
+				-- your configuration
+			})
+		end,
+	})
+	-- Debugger
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+	use({ "jbyuki/one-small-step-for-vimkind" })
 
 	-- Copilot
 	use({ "github/copilot.vim" })
