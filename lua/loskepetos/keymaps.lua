@@ -58,13 +58,18 @@ keymap.set("v", "<", "<gv", opts)
 keymap.set("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap.set("v", "<S-z", ":m .+0<CR>==", opts)
-keymap.set("v", "<S-x", ":m .-3<CR>==", opts)
+keymap.set("v", "<C-z>", ":m .+0<CR>==", opts)
+keymap.set("v", "<C-x", ":m .-3<CR>==", opts)
 keymap.set("v", "p", '"_dP', opts)
 
-keymap.set("x", "<S-z>", ":move '>+1<CR>gv-gv", opts)
-keymap.set("x", "<S-x>", ":move '<-2<CR>gv-gv", opts)
+keymap.set("x", "<C-z>", ":move '>+1<CR>gv-gv", opts)
+keymap.set("x", "<C-x>", ":move '<-2<CR>gv-gv", opts)
 
 -- Glance
 keymap.set("n", "Gr", "<CMD>Glance references<CR>")
 keymap.set("n", "Gd", "<CMD>Glance type_definitions<CR>")
+
+--Chatgpt
+keymap.set("n", "<space>gg", "<CMD>ChatGPT<CR>", opts)
+keymap.set("n", "<space>ga", "<CMD>ChatGPTActAs<CR>", opts)
+keymap.set("n", "<space>ge", "<CMD>ChatGPTEditWithInstructions<CR>", opts)
