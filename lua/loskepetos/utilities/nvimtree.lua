@@ -31,7 +31,6 @@ require("nvim-tree").setup({
 		width = 32,
 		side = "left",
 		signcolumn = "no",
-		path = "absolute",
 	},
 	git = {
 		enable = true,

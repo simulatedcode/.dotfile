@@ -61,13 +61,13 @@ return packer.startup(function(use)
 	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 	use({ "goolord/alpha-nvim" })
 	use({ "ahmedkhalf/project.nvim" })
+	use({ "mbbill/undotree" })
 
-	use({ "projekt0n/github-nvim-theme" })
-	use({ "folke/tokyonight.nvim" })
-	use({ "lunarvim/darkplus.nvim" })
+	-- Colorschemes
+	use("EdenEast/nightfox.nvim")
 
 	-- Treesitter
-	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
 	-- Telescope
 	use({ "nvim-telescope/telescope.nvim" })

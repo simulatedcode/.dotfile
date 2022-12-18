@@ -124,11 +124,6 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  ["darkplus.nvim"] = {
-    loaded = true,
-    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
-    url = "https://github.com/lunarvim/darkplus.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -138,11 +133,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/git.nvim",
     url = "https://github.com/dinhhuy258/git.nvim"
-  },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -204,6 +194,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -320,15 +315,15 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["typescript.nvim"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
+  },
+  undotree = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
   },
   ["vim-illuminate"] = {
     loaded = true,
