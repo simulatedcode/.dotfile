@@ -81,10 +81,13 @@ return packer.startup(function(use)
 	use({ "saadparwaiz1/cmp_luasnip" }) -- snippet completions
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-nvim-lua" })
+	use("hrsh7th/cmp-nvim-lsp-signature-help")
 
 	-- Snippets
 	use({ "L3MON4D3/LuaSnip" }) --snippet engine
 	use({ "rafamadriz/friendly-snippets" }) -- a bunch of snippets to use
+	use("hrsh7th/cmp-vsnip")
+	use("hrsh7th/vim-vsnip")
 
 	-- Git
 	use({ "lewis6991/gitsigns.nvim" })
@@ -124,6 +127,7 @@ return packer.startup(function(use)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 	use({ "nvim-lua/lsp-status.nvim" })
 	use({ "RRethy/vim-illuminate" })
+	use({ "simrat39/rust-tools.nvim" })
 
 	-- Formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters

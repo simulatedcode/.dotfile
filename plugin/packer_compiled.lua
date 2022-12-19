@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["cmp-nvim-lsp-signature-help"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp-signature-help",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help"
+  },
   ["cmp-nvim-lua"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   cmp_luasnip = {
     loaded = true,
@@ -305,6 +315,11 @@ _G.packer_plugins = {
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
   },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
   ["telescope-dap.nvim"] = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
@@ -339,6 +354,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/loskepetos/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 

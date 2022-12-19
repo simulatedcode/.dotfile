@@ -30,6 +30,8 @@ vim.opt.wildignore:append({ "*/node_modules/*" })
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+vim.wo.foldmethod = "expr"
+vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])

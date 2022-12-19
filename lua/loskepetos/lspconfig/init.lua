@@ -68,6 +68,30 @@ local lsp_flags = {
 	debounce_text_changes = 150,
 }
 
+-- rust setup
+nvim_lsp.rust_analyzer.setup({
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = capabilities,
+	settings = {
+		["rust-analyzer"] = {
+			assist = {
+				importGranularity = "module",
+				importPrefix = "by_self",
+			},
+			cargo = {
+				loadOutDirsFromCheck = true,
+			},
+			checkOnSave = {
+				command = "clippy",
+			},
+			procMacro = {
+				enable = true,
+			},
+		},
+	},
+})
+
 nvim_lsp.astro.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
