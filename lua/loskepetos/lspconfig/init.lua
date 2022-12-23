@@ -68,6 +68,14 @@ local lsp_flags = {
 	debounce_text_changes = 150,
 }
 
+nvim_lsp.tailwindcss.setup({
+	cmd = { "tailwindcss-language-server", "--stdio" },
+	filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact", "svelte", "vue" },
+	on_attach = on_attach,
+	capabilities = capabilities,
+	flags = lsp_flags,
+})
+
 -- rust setup
 nvim_lsp.rust_analyzer.setup({
 	on_attach = on_attach,
